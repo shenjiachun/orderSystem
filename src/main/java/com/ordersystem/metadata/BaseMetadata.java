@@ -36,6 +36,14 @@ public abstract class BaseMetadata implements Metadata {
         attributes.put(key, value);
     }
     
+    /**
+     * Remove a specific attribute
+     * @param key attribute key
+     */
+    protected void removeAttribute(String key) {
+        attributes.remove(key);
+    }
+    
     @Override
     public boolean validate() {
         return true;

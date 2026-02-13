@@ -37,6 +37,6 @@ public class CustomFieldsMetadata extends BaseMetadata {
      * @param fieldName field name
      */
     public void removeField(String fieldName) {
-        attributes.remove(fieldName);
+        removeAttribute(fieldName);
     }
 }
